@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Leaf console</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <session>
+        <div class="banner">
+            <div class="row">
+                <img class="leaflogo" src="logo leafArtboard 1@3x.png" alt="leaflogo">
+                <h1 class="logoname">A leaf Console</h1>
+                <p class="vertname"> A LEAF</p>
+                <div id="icons">
+                    <div class="iconBar">
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/aleafconsole/"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/+919500326390"><i class="fa fa-whatsapp"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=100085383019855"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/aleafconsole"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/a-leaf-console-11b017250/"><i
+                                        class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:aleafconsole@gmail.com"><i class="fa fa-google"></i></a>
+                            </li>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </session>
+
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeForm()" title="Close"> &cross;</span>
+        <div class="wrap" style="justify-content: center;">
+
+            <div class="ContainerOverlay" style="width: 100%;">
+                <form id="forms" action="mailto:aleafconsole@gmail.com?subject=A_Leaf_Console_Request" method="post"
+                    enctype="text/plain" style="background-color: whitesmoke;">
+                    <h3> SEND REQUEST </h3>
+                    <p>
+                    Please read Terms and Conditions
+                    To hire us Please fill this form
+                            Thank  you
+                    </p>
+                    <Table class="tableForm",border="10px solid" >
+                        <tr>
+                            <input type="text" name="fname" placeholder="First name"
+                                    class="fields" required >
+                        </tr>
+                        <tr>
+                            
+                            <input type="text" name="lname" placeholder="Last name"
+                                    class="fields">
+                        </tr>
+                        <tr>
+                            
+                            <input type="email" name="email" placeholder="e-mail address"
+                                    class="fields" required>
+                        </tr>
+                        <tr>
+                            
+                            <input type="number" name="number" placeholder="mobile number"
+                                    class="fields" required>
+                        </tr>
+                        <tr>
+                            
+                            <input type="text" name="Request" id="request"
+                                     class="fields" readonly="true">
+                        </tr>
+                        <tr>
+                            
+                            <textarea name="message" rows="3" placeholder="message"
+                                    class="fields"></textarea>
+                        </tr>
+                        <tr>
+                            <td><button type="submit" class="sub" value="Submit">Submit</button><button type="button"
+                                    class="cancel" value="cancel" onclick="closeForm()">Cancel</button></td>
+                        </tr>
+                    </Table>
+                    <!-- <button type="button" class="sub">Submit</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="banner">
+            <div class="container reveal">
+                <div class="slogan">
+                    <h4 class="sentence">One Console for Designing your Dreams</h4>
+                    <div>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>2D Concept Floor Plan</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- Concept Floor Plan</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Furniture Layout </h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Colour and B/W</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Joineries Schedule</h5>
+                                        </li>
+                                    </ul>
+
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = '2D Plan / Concept Plan')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>2D Floor plan with (Technical details)</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- Floor Plan</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Section </h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5> - Site Layout</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Furniture Layout</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Colour and B/W </h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Joineries Schedule </h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <button type="button" class="OpenBtn"
+                                                onclick="openForm(msg = '2D with 3D floor Plan')">contact us</button>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>3D Elevation</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- Front view</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5> - Second View</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Angular View</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Day & Night View</h5>
+                                        </li>
+                                    </ul>
+
+
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = '2D Complete Set drawing for Approval')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>3D Elevation (Technical Drawings)</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- Elevation Plan</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5> - Working Drawings</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5> - Section </h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Technical Notes & Details</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Colour and B/W </h5>
+                                        </li>
+
+                                    </ul>
+
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = '2D interior View / with technical Drawings')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>3D Interior View</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- Interior view</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Day & Night View</h5>
+                                        </li>
+
+                                    </ul>
+
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = '3D interior view / with technical Drawings')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>2D Interior (Technical Drawings)</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- Elevation Plan</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Working Drawings</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Section </h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Technical notes & Details</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Colour and B/W </h5>
+                                        </li>
+
+                                    </ul>
+
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = '3d Elevation View')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>3D Floor Plan</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- Floor Plan</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Furniture Layout </h5>
+                                        </li>
+                                    </ul>
+
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = '3D Walk through')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>3D Walkthrough</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- Interior Walkthrough</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Exterior Walkthrough </h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Realistic View </h5>
+                                        </li>
+                                    </ul>
+
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = 'Estimation')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>Structural Design</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- Complete Structural detailed Drawing</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Foundation Details <br> As per Geo Location details</h5>
+                                        </li>
+                                        <dl></dl>
+                                        <li class="listItem">
+                                            <h5>- Soil Test [Extra]</h5>
+                                        </li>
+                                    </ul>
+
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = 'Structural Design')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>Electrical Drawings</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- conduit Layout</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Fittings Layout</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Electrical Fixtures Drawings</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Complete set of Drawings</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5> </h5>
+                                        </li>
+                                    </ul>
+
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = 'Electrical / Plumbing Drawings')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>Plumbing drawing</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- Interior Plumbing Layout</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Exterior Plumbing Layout</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Plumbing Fixtures Drawing</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Complete set of drawing </h5>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = 'Plumbing drawing')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>Estimation</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- Civil work (2 per Sq.ft)</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Finishing Works (2.5 per sq.ft)</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Interior Works (3 per Sq.ft)</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- External Development Works (2 Per Sq.ft)</h5>
+                                        </li>
+                                                                            </ul>
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = 'Estimation')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>Estimation</p>
+                                    <p>part - 2</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        
+                                        <li class="listItem">
+                                            <h5>- Elevation works ( 2.5 Per Sq.ft )</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Electrical works ( 2 Per Sq.ft )</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Plumbing works ( 2 Per Sq.ft )</h5>
+                                        </li>
+
+                                    </ul>
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = 'Estimation pt 2')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>Complete Set of Drawing</p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h5>- 2D & 3D Floor Plan</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- Sections</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- 2D & 3D Interior works</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- External Development Layout</h5>
+                                        </li>
+                                        <li class="listItem">
+                                            <h5>- 2D & 3D Elevation</h5>
+                                        </li>
+                    
+                                    </ul>
+                                  
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = 'Complete Set of Drawing<')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>Complete Set of Drawing</p>
+                                    <p>part - 2 </p>
+                                </div>
+                                <div class="back">
+                                    <ul class="list">
+                                        <li class="listItem">
+                                            <h6>- Structural Drawing</h6>
+                                        </li>
+                                        <li class="listItem">
+                                            <h6>- Electrical Drawing </h6>
+                                        </li>
+                                        <li class="listItem">
+                                            <h6>- Plumbing Drawing </h6>
+                                        </li>
+                                        <li class="listItem">
+                                            <h6>- Estimation</h6>
+                                        </li>
+                                        <li class="listItem">
+                                            <h6>- 3D Walkthrough</h6>
+                                        </li>
+                                        <li class="listItem">
+                                            <h6>- Technical Details & Specifications</h6>
+                                        </li>
+                                    </ul>
+                                  
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = 'Complete Set of Drawing pt 2<')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="checkbox" value="" class="check" />
+                            <div class="card">
+                                <div class="front">
+                                    <p>Upcoming Updates</p>
+                                </div>
+                                <div class="back">
+                                    <p>Upcoming Updates</p>
+                                    <h5>If you have any queries and suggestion</h5>
+                                    <h5>please support and guide us</h5>
+                                    <button type="button" class="OpenBtn"
+                                        onclick="openForm(msg = 'suggestion')">contact us</button>
+                                </div>
+                            </div>
+                        </label>
+                        <div>
+                            <p>3 FREE Corrections Only</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 200;
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                } else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendMail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "username",
+                Password: "password",
+                To: 'them@website.com',
+                From: "you@isp.com",
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+
+    </script>
+    <script>
+        function openForm(msg) {
+            console.log(msg);
+
+            document.getElementById("myOverlay").style.display = "block";
+            document.getElementById("forms").reset();
+            document.getElementById("request").value = msg;
+        }
+    </script>
+    <script>
+        function closeForm() {
+            document.getElementById("myOverlay").style.display = "none";
+            document.getElementById("forms").reset();
+        }
+    </script>
+</body>
+
+</html>
